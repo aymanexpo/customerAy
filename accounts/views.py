@@ -18,7 +18,8 @@ def home(request):
         'total_customers':total_customers,
         'total_orders':total_orders,
         'delivered':delivered,
-        'pending':pending
+        'pending':pending,
+        'myFilter':myFilter
         }
     return render(request, 'accounts/dashboard.html',context)
 
